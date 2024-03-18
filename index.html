@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор калорий</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор рассчета калорийности продукта</h1>
+        <h2>Инструкция:</h2>
+        <p>
+            1. В поле "Калорийность на 100 гр" введите калорийность вашего продукта на 100 гр.
+        </p>
+        <p>
+            2. В поле "Вес продукта" введите вес вашего продукта.
+        </p>
+        <p>
+            3. Нажмите на кнопку "Посчитать"
+        </p>
+        <div class="calculator" action="">
+            <label for="calories100grams">Калорийность на 100 гр</label>
+            <input type="number" id="calories100grams">
+            <br>
+            <label for="productWeight">Вес продукта</label>
+            <input type="number" id="productWeight">
+            <br>
+            <button onclick="calculate()">Посчитать</button>
+            <h3>Итого:</h3>
+            <p id="result"></p>
+            </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
